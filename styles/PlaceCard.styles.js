@@ -18,7 +18,7 @@ export const StyledPlacecard = styled.div`
     margin-top: 5px;
   }
   #PlaceCardDesc {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: "poppins";
     font-weight: light;
     width: fit-content;
@@ -58,7 +58,6 @@ export const StyledPlacecard = styled.div`
       margin-top: 7px;
     }
     #PlaceCardDesc {
-      font-size: 0.9rem;
       margin-top: 5px;
       font-family: "inter";
       font-weight: light;
