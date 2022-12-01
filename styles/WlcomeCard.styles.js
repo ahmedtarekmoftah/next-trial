@@ -121,7 +121,7 @@ export const StyledWelcomeCardCharacter = styled.div`
     margin-right: 15px;
   }
   #WelcomeCardCharacterDesc {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: "inter", sans-serif;
     font-weight: 400;
     margin-top: 3px;
