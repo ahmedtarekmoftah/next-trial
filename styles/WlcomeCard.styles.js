@@ -15,9 +15,11 @@ export const StyledWelcomeCardContainer = styled.div`
   margin-top: 55px;
 
   @media only screen and (min-width: 1024px) {
-    width: calc(100% - 15rem);
-    margin-top: 67px;
-    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 14px 0px #00000020;
+    border-radius: 10px;
+    width: calc(100% - 25rem);
+    margin-top: 77px;
   }
 `;
 
@@ -84,7 +86,9 @@ export const StyledWelcomeCardPlace = styled.div`
     user-select: none;
   }
   @media screen and (min-width: 1024px) {
-    width: ${(props) => (props.img ? "90%" : "calc( 100% - 320px )")};
+    width: ${(props) => (props.img ? "100%" : "calc( 100% - 320px )")};
+    border-radius: 10px;
+    overflow: hidden;
     #WelcomeCardPlacePreOrder {
       top: 90%;
     }
@@ -104,44 +108,33 @@ export const StyledWelcomeCardCharacter = styled.div`
     height: 450px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
   }
   #WelcomeCardCharacterCountry {
     display: flex;
     align-items: baseline;
   }
   #WelcomeCardCharacterCountryFlag {
-    width: 20px;
+    height: 21px;
+    width: 28px;
+    margin-top: 5px;
+    margin: 0px;
+    display: block;
+    padding: 4px;
+    border-radius: 8px;
   }
 
-  #WelcomeCardCharacterTitle {
-    font-size: 1.1rem;
-    font-family: "inter", sans-serif;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-right: 15px;
-  }
-  #WelcomeCardCharacterDesc {
-    font-size: 1rem;
-    font-family: "inter", sans-serif;
-    font-weight: 400;
-    margin-top: 3px;
-    height: 120px;
-    overflow-y: scroll;
-    -moz-user-select: text;
-    -khtml-user-select: text;
-    -webkit-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-  }
   #WelcomeCardCharacterDesc::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
   #WelcomeCardCharacterCountryLetters {
     color: #918e9b;
-    font-size: 0.9rem;
-    position: relative;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    color: #555555;
+    padding: 4px 7px 4px 0px;
   }
   @media screen and (min-width: 1024px) {
     color: #454545;
@@ -152,20 +145,43 @@ export const StyledWelcomeCardCharacter = styled.div`
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
     #WelcomeCardCharacterCountry {
-      height: 30px;
+      position: absolute;
+      width: fit-content;
+      top: 410px;
+      left: 112px;
+      z-index: 3;
+      background-color: #ffffffd0;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
     }
 
     #WelcomeCardCharacterTitle {
-      font-size: 1.1rem;
+      font-size: 1.7rem;
       font-family: "inter", sans-serif;
       font-weight: 700;
-      margin-top: 5px;
-      margin-right: 15px;
+      margin-top: 10px;
+      text-align: center;
     }
     #WelcomeCardCharacterDesc {
-      margin-top: 0px;
+      font-size: 1rem;
+      text-align: center;
+      font-family: "inter", sans-serif;
+      font-weight: 400;
+      margin-top: 3px;
+      height: 100px;
+      overflow-y: hidden;
+      -moz-user-select: text;
+      -khtml-user-select: text;
+      -webkit-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
     }
 
     #WelcomeCardCharacterCountryLetters {

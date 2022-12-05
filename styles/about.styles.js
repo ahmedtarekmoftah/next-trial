@@ -5,9 +5,8 @@ export const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 200px;
   gap: 20px;
   #AboutCreator {
     font-weight: 600;

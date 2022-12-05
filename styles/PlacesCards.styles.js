@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const StyledPlacesCards = styled.div`
   margin: auto;
   @media only screen and (min-width: 1024px) {
-    width: calc(100% - 15rem);
+    width: calc(100% - 25rem);
   }
 `;
 
 export const StyledPlacesCardsHeader = styled.div`
   width: 100%;
   margin: auto;
+
   #PlacesTitle {
     font-family: "Inter";
     font-size: 1.8rem;
@@ -29,7 +30,8 @@ export const StyledPlacesCardsHeader = styled.div`
     margin-left: 30px;
   }
   @media only screen and (min-width: 1024px) {
-    padding: 0 0 20px 0;
+    padding: 0;
+    margin-top: 30px;
     #PlacesTitle {
       font-size: 2.2rem;
       margin: 0;
@@ -44,19 +46,20 @@ export const StyledPlacesCardsHeader = styled.div`
 `;
 
 export const StyledPlacesCardMain = styled.div`
-  margin-left: 30px;
   margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  overflow: scroll;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
   gap: 30px;
 
   @media only screen and (min-width: 1024px) {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     overflow: hidden;
     margin: auto;
+    margin-top: 20px;
   }
 `;

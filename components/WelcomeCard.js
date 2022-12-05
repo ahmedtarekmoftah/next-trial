@@ -84,24 +84,22 @@ const WelcomeCard = (props) => {
         </StyledWelcomeCardPlace>
         {props.character && (
           <StyledWelcomeCardCharacter>
-            <img
-              id="WelcomeCardCharacterImage"
-              src={`/m1.jpg`}
-              alt="ahmedibntulun mosque"
-            />
-
             <div id="WelcomeCardCharacterCountry">
-              <h1 id="WelcomeCardCharacterTitle">Um kaltoum</h1>
               <img
                 id="WelcomeCardCharacterCountryFlag"
                 src="/eg.svg"
                 alt="eg"
               />
               <span id="WelcomeCardCharacterCountryLetters">
-                &nbsp; &#183; EG
+                &nbsp;&#183; EG
               </span>
             </div>
-
+            <img
+              id="WelcomeCardCharacterImage"
+              src={`/m1.jpg`}
+              alt="ahmedibntulun mosque"
+            />
+            <h1 id="WelcomeCardCharacterTitle">Masjid of Mohamed Ali</h1>
             <p id="WelcomeCardCharacterDesc">{current.description}</p>
           </StyledWelcomeCardCharacter>
         )}

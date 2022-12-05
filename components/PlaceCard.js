@@ -6,14 +6,23 @@ const PlaceCard = (props) => {
   return (
     <Link href={`/Place/${props.id}`}>
       <StyledPlacecard>
-        <img id="PlaceCardImage" src={`/${props.image}`} alt={props.title} />
-        <div>
-          <img id="flag" src="/eg.svg" alt="eg" />
-          <span id="CountryLetters">&nbsp; &#183; EG</span>
+        <div className="countryContainer">
+          <img className="flag" src="/eg.svg" alt="eg" />
+          <p className="p"> &#183; EG</p>
         </div>
-        <div>
-          <p id="PlaceCardTitle">{props.title}</p>
-          <p id="PlaceCardDesc">{props.description}</p>
+        <div className="PlaceCardImageContainer">
+          <div className="placeImageOpacity"></div>
+          <img
+            className="PlaceCardImage"
+            src={`/${props.image}`}
+            alt={props.title}
+          />
+        </div>
+        <div className="cardInfo">
+          <div className="PlaceCardTitleContainer">
+            <p className="PlaceCardTitle">{props.title}</p>
+          </div>
+          <p className="PlaceCardDesc">{props.description}</p>
         </div>
       </StyledPlacecard>
     </Link>
